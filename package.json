@@ -1,0 +1,25 @@
+{
+  "name": "@michael-spengler/tslint",
+  "version": "0.1.0",
+  "description": ".",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:cov": "jest --coverage",
+    "tslint": "tslint -p ./",
+    "bp": "npm run tslint && rm -rf ./dist && rm -rf ./node_modules && npm i --save && tsc && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michael-spengler/shared-tslint"
+  },
+  "keywords": [
+    "Shared TSLint"
+  ],
+  "author": "Michael Spengler",
+  "license": "MIT",
+  "devDependencies": {
+    "tslint": "^5.12.1",
+  }
+}
